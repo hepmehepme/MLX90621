@@ -3,7 +3,7 @@
 * 2013 by Felix Bonowski
 * Based on a forum post by maxbot: http://forum.arduino.cc/index.php/topic,126244.msg949212.html#msg949212
 * This code is in the public domain.
-*
+*/
 
 
 #include "MLX90621.h"
@@ -15,6 +15,7 @@ void setup(){
   Serial.println("trying to initialize sensor...");
   sensor.initialise (16); // start the thermo cam with 8 frames per second
   Serial.println("sensor initialized!");
+  Wire.begin();
 }
 void loop(){
   sensor.measure(); //get new readings from the sensor
