@@ -1,0 +1,7 @@
+{
+  "name": "MLX90621_particle",
+  "author": "Max Ritter",
+  "license": "Public",
+  "version": "0.0.10",
+  "description": "Library for interfacing with MLX90621 temp sensor array"
+}
