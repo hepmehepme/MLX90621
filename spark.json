@@ -2,6 +2,6 @@
   "name": "MLX90621",
   "author": "Max Ritter",
   "license": "Public",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Library for interfacing with MLX90621 temp sensor array"
 }
