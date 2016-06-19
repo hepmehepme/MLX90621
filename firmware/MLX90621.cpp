@@ -85,10 +85,10 @@ void MLX90621::readEEPROM() { // Read in blocks of 32 bytes to accomodate Wire l
     Wire.beginTransmission(0x50);
     Wire.write(j);
     byte rc = Wire.endTransmission(I2C_NOSTOP);
-    if(rc) {
-      Serial.print("rdEEPROM: ");
-      Serial.println(rc);
-    }
+    //if(rc) {
+    //  Serial.print("rdEEPROM: ");
+    //  Serial.println(rc);
+    //}
     Wire.requestFrom(0x50, 32);
     for (int i = 0; i < 32; i++) {
       eepromData[j+i] = Wire.read();
