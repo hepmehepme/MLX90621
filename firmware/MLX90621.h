@@ -74,6 +74,7 @@ public:
 	void initialise(int);
 	void measure();
 	float getTemperature(int num);
+	void setEmissivity(float em);
 	float getAmbient();
 };
 
