@@ -15,6 +15,10 @@ void MLX90621::initialise(int refrate) {
 	setConfiguration();
 }
 
+void MLX90621::setEmissivity(float em) {
+	emissivity = em;
+}
+
 void MLX90621::measure() {
 	if (checkConfig()) {
 		readEEPROM();
