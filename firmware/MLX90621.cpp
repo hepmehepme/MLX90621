@@ -134,8 +134,8 @@ void MLX90621::calculateTA(void) {
 
 void MLX90621::calculateTO() {
 	//Calculate variables from EEPROM
-	emissivity = (256 * eepromData[CAL_EMIS_H] + eepromData[CAL_EMIS_L])
-			/ 32768.0;
+//	emissivity = (256 * eepromData[CAL_EMIS_H] + eepromData[CAL_EMIS_L])
+//			/ 32768.0;
       
 	a_common = (int16_t) 256 * eepromData[CAL_ACOMMON_H]
 			+ eepromData[CAL_ACOMMON_L];
